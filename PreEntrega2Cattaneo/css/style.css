@@ -1,0 +1,218 @@
+/*Normalize*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.fondo {
+    background-color: rgb(0, 110, 83);
+    background-image: linear-gradient(to bottom, rgba(138, 255, 226, 0.678), rgb(1, 41, 31, 0.678));
+}
+
+
+header {
+    grid-area: nav;
+    background-color: rgb(197, 194, 194);
+    line-height: 1;
+}
+
+.vanadiumlogo:hover {
+    transform: scale(1.1, 1.1);
+}
+
+header nav ul {
+    align-items: center;
+}
+
+nav ul li a {
+    color: aliceblue;
+    background-color: rgb(39, 119, 82);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+.tituloprincipal {
+    font-family: 'Lora', serif;
+    font-style: regular;
+    font-size: 50px;
+    color: rgb(5, 90, 64);
+    text-align: center;
+}
+
+
+.comissions {
+
+    font-family: 'Lora', serif;
+}
+
+
+table {
+    background-color: rgb(138, 82, 175);
+    justify-items: center;
+}
+
+thead {
+    background: beige;
+    font-family: 'Arimo';
+    align-self: center;
+    text-align: center;
+}
+
+tbody {
+    background: beige;
+    font-family: 'Arimo';
+    align-self: center;
+    text-align: center;
+}
+
+.excuses {
+    text-align: center;
+}
+
+.llanto {
+    padding-top: 30px;
+    text-align: center;
+}
+
+section article {
+    align-items: center;
+    align-content: center;
+    color: rgb(0, 0, 0);
+
+}
+
+section article p {
+    line-height: 2;
+    margin-left: 110px;
+    align-items: center;
+    justify-items: center;
+}
+
+.works {
+    color: rgb(0, 48, 40);
+    font-family: 'Arimo', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.works img {
+    width: 40%;
+    margin: 30px;
+    align-items: center;
+}
+
+#works {
+    font-family: 'Lora', serif;
+}
+
+.card {
+    background-color: transparent;
+    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 800px;
+
+}
+
+.aboutme {
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 50px;
+}
+
+.aboutmetext {
+    width: fit-content;
+    /*No me sale centrarlo. En este y muchos casos, como verán. 
+    traté con bootsrap pero no me salióu*/
+    text-align: justify;
+    font-family: 'Arimo', sans-serif;
+}
+
+.card__fieldset {
+    padding-top: 30px;
+    grid-area: main;
+    text-align: center;
+    padding-bottom: 20px;
+    align-items: center;
+    /*nuevamente no se me alinea al centro de la pag*/
+}
+
+legend {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+
+}
+
+footer {
+    grid-area: footer;
+    flex: inline;
+    justify-content: center;
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+    background-color: rgb(43, 43, 49);
+    line-height: 2;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 720px) {
+    .gridpadre {
+
+    }
+
+    .main a img {
+        width: 50%;
+        margin: 30px;
+    }
+
+    .works img {
+        width: 50%;
+        margin: 30px;
+    }
+}
+
+/*este maybe borrarlo eh*/
+@media screen and (max-width: 400px) {
+    .gridpadre {
+      
+    }
+
+    .main a img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .works img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
